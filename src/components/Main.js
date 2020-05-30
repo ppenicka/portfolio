@@ -39,19 +39,6 @@ class Main extends React.Component {
             magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
             By the way, check out my <a href="#work">awesome work</a>.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
           {close}
         </article>
 
@@ -62,7 +49,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Projects</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -96,13 +83,10 @@ class Main extends React.Component {
             <img src={pic03} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+          Full-stack software developer focusing on JavaScript technologies, most notably React, Redux, Angular, Node.js, Express and Koa. Skilled in Linux administration, Bash scripting, MongoDB, PostgreSQL and Redis. Seasoned remote worker experienced in managing geographically distributed teams.
+          </p>
+          <p>
+          Before switching to the software development path, I gained a proven track record of 12+ years in the software industry as a project manager and technical writer. Then I realized that instead of documenting software or coordinating teams that produce it, I'll get the most satisfaction out of writing the software myself. Since that moment I've done a lot of learning, developed two deployment-ready projects, and became competent to contribute with my coding skills in a full-time developer position.
           </p>
           {close}
         </article>
@@ -140,29 +124,17 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/ppenicka"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
               </a>
+              <a
+              href="https://www.linkedin.com/in/petr-penicka/"
+              className="icon fa-linkedin"
+            >
+              <span className="label">LinkedIn</span>
+            </a>
             </li>
           </ul>
           {close}
