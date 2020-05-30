@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import ppiconwht from '../images/pp-icon-white.png'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="logo">
-      <span className="icon fa-diamond"></span>
-    </div>
+
+    <img src={ppiconwht} alt="ppenicka logo" className="icon fa-diamond" />
+
     <div className="content">
       <div className="inner">
         <h1>Petr Penicka</h1>
         <p>
-        Full-stack software developer focusing on JavaScript technologies.
+        Full-stack software developer focused on JavaScript technologies.
         </p>
       </div>
     </div>
