@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import heydj from '../images/heydj.jpg'
+import fitvid from '../images/fitvid.jpg'
+import ppenicka from '../images/ppenicka.jpg'
 
 class Main extends React.Component {
-  render() {
+  render () {
     let close = (
       <div
         className="close"
@@ -25,16 +25,20 @@ class Main extends React.Component {
           id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={ppenicka} alt="" />
           </span>
           <p>
-            Hello and welcome to my portfolio website! My name is Petr and I'm a software engineer specialized in full-stack JavaScript web development. But just take my word for it - check out my <a href="#work"> projects</a> to see what I can build.
+            Hello and welcome to my portfolio website! My name is Petr and I'm a software engineer specialized in full-stack JavaScript technologies. This page aims at presenting projects that I have worked on and my professional profile. I will keep continuously updating it with new cool stuff that I work on.
           </p>
+          <p>
+            I am currently looking for a full-time position in the Barcelona area. If you are hiring and feel like I might be a good fit, don't hesitate to contact me!
+          </p>
+
           {close}
         </article>
 
@@ -42,28 +46,31 @@ class Main extends React.Component {
           id="work"
           className={`${this.props.article === 'work' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Projects</h2>
+          <h2 className="major">Hey DJ</h2>
+          <p>
+            Hey DJ is a web app that performs tracklist recognition in DJ sets using the ACRCloud music recognition API. You give it a recorded DJ set, it returns a list of tracks that the DJ played. I have built the whole application from the ground up and subsequently received a funding offer to get it into production, which is currently planned for Q3 2020.<br />
+          </p>
+          <p>
+            GitHub: <a href="https://github.com/ppenicka/hey-dj">https://github.com/ppenicka/hey-dj</a><br />
+            Tech stack: React, Node.js, Express, MongoDB, Mongoose, FFmpeg, ACRCloud API<br />
+          </p>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={heydj} alt="" />
           </span>
+          <h2 className="major">FitVid Tracker</h2>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            Fitvid Tracker is a web app that helps users organize personal workout plans based on YouTube videos. I have worked on this project as a member of a 4-person team. My contribution was implementing an API client to connect front-end to the back-end, the scheduling system, Google authentication, Redux state management, and a significant portion of the front-end logic.<br />
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            GitHub: <a href="https://github.com/ppenicka/fitvid-tracker">https://github.com/ppenicka/fitvid-tracker</a><br />
+            Tech stack: React, Redux, Node.js, Koa, MongoDB, Mongoose, Material UI<br />
           </p>
+          <span className="image main">
+            <img src={fitvid} alt="" />
+          </span>
           {close}
         </article>
 
@@ -71,18 +78,15 @@ class Main extends React.Component {
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
+          <h2 className="major">About Me</h2>
           <p>
-          Full-stack software developer focusing on JavaScript technologies, most notably React, Redux, Angular, Node.js, Express and Koa. Skilled in Linux administration, Bash scripting, MongoDB, PostgreSQL and Redis. Seasoned remote worker experienced in managing geographically distributed teams.
+            I am a full-stack software developer focused on JavaScript technologies, most notably React, Redux, Angular, Node.js, Express and Koa. Some of my other specializations include Linux administration, Bash scripting, MongoDB, PostgreSQL and Redis. I am a seasoned remote worker experienced in managing geographically distributed teams.
           </p>
           <p>
-          Before switching to the software development path, I gained a proven track record of 12+ years in the software industry as a project manager and technical writer. Then I realized that instead of documenting software or coordinating teams that produce it, I'll get the most satisfaction out of writing the software myself. Since that moment I've done a lot of learning, developed two deployment-ready projects, and became competent to contribute with my coding skills in a full-time developer position.
+            Before switching to the software development path, I gained a proven track record of 12+ years in the software industry as a project manager and technical writer. Then I realized that instead of documenting software or coordinating teams that produce it, I'll get the most satisfaction out of writing the software myself. Since that moment I've done a lot of learning, developed two deployment-ready projects, and became competent to contribute with my coding skills in a full-time developer position.
           </p>
           {close}
         </article>
@@ -91,7 +95,7 @@ class Main extends React.Component {
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
@@ -126,11 +130,11 @@ class Main extends React.Component {
                 <span className="label">GitHub</span>
               </a>
               <a
-              href="https://www.linkedin.com/in/petr-penicka/"
-              className="icon fa-linkedin"
-            >
-              <span className="label">LinkedIn</span>
-            </a>
+                href="https://www.linkedin.com/in/petr-penicka/"
+                className="icon fa-linkedin"
+              >
+                <span className="label">LinkedIn</span>
+              </a>
             </li>
           </ul>
           {close}

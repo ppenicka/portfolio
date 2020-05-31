@@ -39,10 +39,10 @@ const Layout = ({ children, location }) => {
       render={data => (
         <>
           <Helmet
-            title={data.site.siteMetadata.title}
+            title={"Petr Penicka - Full-Stack Software Developer Focused on JavaScript Technologies"}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'Portfolio website of Petr Penicka, full-stack software developer focused on JavaScript technologies, based in Barcelona, Catalonia, Spain.' },
+              { name: 'keywords', content: 'Petr, Penicka, full-stack, developer, software, engineer, JavaScript, React, Node, Node.js, Express' },
             ]}
           >
             <html lang="en" />
