@@ -15,11 +15,6 @@ class Main extends React.Component {
       ></div>
     )
 
-    function submit (event) {
-      event.preventDefault();
-      console.log('eveeeent', event);
-    }
-
     return (
       <div
         ref={this.props.setWrapperRef}
