@@ -11,7 +11,7 @@ const Header = props => (
       <div className="inner">
         <h1>Petr Penicka</h1>
         <p>
-        Full-stack software developer focused on JavaScript technologies.
+        Full-stack software developer focused on JavaScript technologies
         </p>
       </div>
     </div>

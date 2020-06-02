@@ -15,6 +15,11 @@ class Main extends React.Component {
       ></div>
     )
 
+    function submit (event) {
+      event.preventDefault();
+      console.log('eveeeent', event);
+    }
+
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -99,7 +104,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="https://formspree.io/mdowgend">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -115,6 +120,7 @@ class Main extends React.Component {
             <ul className="actions">
               <li>
                 <input type="submit" value="Send Message" className="special" />
+                <input type="hidden" name="_next" value="//ppenicka.me" />
               </li>
               <li>
                 <input type="reset" value="Reset" />
@@ -129,6 +135,8 @@ class Main extends React.Component {
               >
                 <span className="label">GitHub</span>
               </a>
+              </li>
+              <li>
               <a
                 href="https://www.linkedin.com/in/petr-penicka/"
                 className="icon fa-linkedin"
