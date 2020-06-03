@@ -65,6 +65,7 @@ class Main extends React.Component {
             Fitvid Tracker is a web app that helps users organize personal workout plans based on YouTube videos. I have worked on this project as a member of a 4-person team. My contribution was implementing an API client to connect front-end to the back-end, the scheduling system, Google authentication, Redux state management, and a significant portion of the front-end logic.<br />
           </p>
           <p>
+            Live deployment: <a href="https://fitvid-tracker.herokuapp.com/">https://fitvid-tracker.herokuapp.com</a><br />
             GitHub: <a href="https://github.com/ppenicka/fitvid-tracker">https://github.com/ppenicka/fitvid-tracker</a><br />
             Tech stack: React, Redux, Node.js, Koa, MongoDB, Mongoose, Material UI<br />
           </p>
@@ -130,8 +131,8 @@ class Main extends React.Component {
               >
                 <span className="label">GitHub</span>
               </a>
-              </li>
-              <li>
+            </li>
+            <li>
               <a
                 href="https://www.linkedin.com/in/petr-penicka/"
                 className="icon fa-linkedin"
